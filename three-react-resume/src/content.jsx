@@ -10,7 +10,7 @@ class AboutMe extends Component {
             <div className='content'>
                 <h3 id="intro">Introduction</h3>
 
-                <img src="./src/assets/me.jpg" alt="This is a picute of me" height="150" style={{ float: 'left' }} />
+                <img src={import.meta.env.BASE_URL + "me.jpg"} alt="This is a picute of me" height="150" style={{ float: 'left' }} />
 
                 <p>Hello, and welcome to my webpage. My name is Dustin Guest, an aspireing software developer.</p>
 
@@ -125,9 +125,31 @@ class MyProjects extends Component {
                         I continued to update it and add any of my projects that could run in a web browser:
                         <ul>
                             <li>Click <a href="http://www.webdev.cs.uregina.ca/~guest20d/" target="_blank" rel="noopener noreferrer">here</a> for a Link to the website hosted on the University of Reginas Web server(this may not work in the future).</li>
-                            <li>Click <a href="#">here</a> for a link to the website hosted on my prvate domain.</li>
-                            <li>Click <a href="#">here</a> for a link to the git containing the project.</li>
                         </ul>
+                    </li>
+
+                    <li>
+                        CS 476: Software development project. This was a project that I developed as part of a team of 2, 
+                        where we had to develop a quality peace of software for web browsers, that followed software enginiring 
+                        practacies and was developed with MVC archetecture in mind. Unfortunatly my partner did not partisipate 
+                        at a level that I thought was apropiate, this lead to me having to write the entire codebas myself. 
+                        As i was trusting my partner to develop a qualit front end this ment that the javascript was developed 
+                        by me in one week, not my best work but the fact that it works at all is an acomplishment.
+                            <ul>
+                                <li>Click <a href="http://www.webdev.cs.uregina.ca/~guest20d/CS476/" target="_blank" rel="noopener noreferrer">here</a> for a link to the web aplication hosted on the universities web page. I am not sure how long this will remain active.</li>
+                                <li>Click <a href="https://github.com/BigRed85/CS476-Software-Development-Project" target="_blank" rel="noopener noreferrer">here</a> for a link to the github that I used to host the project for sorce control.</li>
+                            </ul>
+                    </li>
+
+                    <li>
+                        CS 207: Building interactive gadgets. for this class there was a term project that required us to design and build an interactive gadget.
+                        The profesor encoraged us to be creative and step out of our comfort zone. I was new to building electronic divices but was able to learn quite alot in this class.
+                        I atempted to build a robotic arm that utalized soft robotics, insted of traditional solid robotics. The major setback was the lack lack of experiance dealing with the physical materials.
+                            <ul>
+                                <li>Click 
+                                    <a href="https://trello.com/b/Zh83buw8/cs207-project" target="_blank" rel="noopener noreferrer">here</a> 
+                                    for a link to the Trello bored that I used to plan the project</li>
+                            </ul> 
                     </li>
                 </ul>
 
@@ -140,8 +162,9 @@ class MyProjects extends Component {
                 </p>
 
                 <ul>
-                    <li>A 3D web appplication that acts as an interactive resume. (this web app)</li>
-                    <li>A <a href="">web blog</a> where I can express My opinions and chronicle my projects.</li>
+                    <li>A 3D web appplication that acts as an interactive resume. (this web app). Built with reactJS and three.JS</li>
+                    <li>A <a href="http://dustinguest.com" target="_blank" rel="noopener noreferrer">web blog</a> where I can express My opinions and chronicle my projects.</li>
+                    <li>A <a href="http://dustinguest.com/lights-solver/lightsOutSolver.html" target="_blank" rel="noopener noreferrer">lights out solver</a>. This is a tool that could be used to solve a lights out puzzle</li>
                 </ul>
 
                 <hr />

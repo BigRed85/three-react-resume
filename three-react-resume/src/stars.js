@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { Scene } from 'three';
 
-const starTexture = new THREE.TextureLoader().load('./src/assets/star.png');
+const starTexture = new THREE.TextureLoader().load( import.meta.env.BASE_URL + 'star.png');
 
 const colorLibrary = [
     new THREE.Color( 0xffffff),

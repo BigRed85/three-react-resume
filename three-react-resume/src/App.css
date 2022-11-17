@@ -37,7 +37,7 @@
     list-style: none;
 
     padding: 1em;
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(41, 41, 41, 0.7);
     border-radius: 3em;
 
 }
@@ -77,18 +77,22 @@
     min-height: 50vh;
     max-height: 60vh;
 
-    border-radius: 3em;
+    border-radius: 2em;
     position: relative;
 
-    padding: 2em;
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: auto 2rem;
 }
 
 .closeButton {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    border-radius: 3em;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 2rem;
     background-color: brown;
+    max-height: 2rem;
+    padding: 0;
 }
 
 .content {
@@ -97,4 +101,24 @@
     overflow-y: scroll;
     border-radius: 1em;
     padding-left: 1em;
+
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+@media only screen and (max-width: 700px) {
+    .pageContent {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .navBar {
+        margin-bottom: 0;
+    }
+
+    .navBar ul {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }

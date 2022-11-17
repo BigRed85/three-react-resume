@@ -198,9 +198,7 @@ function App() {
     const boxMesh = new THREE.Mesh(boxGeo, boxMat);
     scene.add(boxMesh);
     boxMesh.position.set(0, 2, 0);
-
-
-
+    
     const stars = new Stars(200, new THREE.Vector3(-128, 4, -32), new THREE.Vector3(128, 32, -60));
 
     // -------------------------- add static meshes --------------------------------
@@ -372,6 +370,17 @@ function App() {
 
         mousePos1.x = event.screenX;
         mousePos1.y = event.screenY;
+        mousePos2.x = event.screenX;
+        mousePos2.y = event.screenY;
+      };
+
+      canvas.ontouchstart = (event) => {
+        isDefaltRotation = false;
+
+        mousePos1.x = event.touches[0].clientX;
+        mousePos1.y = event.touches[0].clientY;
+        mousePos2.x = event.touches[0].clientX;
+        mousePos2.y = event.touches[0].clientY;
       };
 
       canvas.onmousemove = (event) => {
@@ -379,11 +388,24 @@ function App() {
         mousePos2.y = event.screenY;
       };
 
+      canvas.ontouchmove = (event) => {
+        mousePos2.x = event.touches[0].clientX;
+        mousePos2.y = event.touches[0].clientY;
+      }
+
       canvas.onmouseup = () => {
         isDefaltRotation = true;
       };
 
       canvas.onmouseleave = () => {
+        isDefaltRotation = true;
+      };
+
+      canvas.ontouchend = () => {
+        isDefaltRotation = true;
+      };
+
+      canvas.ontouchcancel = () => {
         isDefaltRotation = true;
       };
 
