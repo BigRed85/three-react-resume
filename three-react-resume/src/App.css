@@ -62,16 +62,16 @@
 
 .navItemSelected button {
     background-color:var(--button-bg-color2);
+    color:var(--text-color-2);
     border: solid white 2px;
 }
 
 .pageContainer {
-    
     height: 100vh;
 }
 
 .pageContent {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-transparent);
     min-width: 50vw;
     max-width: min(75em, 80vw);
     min-height: 50vh;
@@ -90,13 +90,15 @@
     grid-column: 2;
     grid-row: 1;
     border-radius: 2rem;
-    background-color: brown;
+    background-color: red;
+    color: white;
+    font-size:x-large;
     max-height: 2rem;
     padding: 0;
 }
 
 .content {
-    background-color: var(--button-bg-color1);
+    background-color: var(--main-bg-color);
     height: 45vh;
     overflow-y: scroll;
     border-radius: 1em;
@@ -132,7 +134,7 @@
 
 .lightButton {
     width: 4rem;
-    background-color: var(--button-bg-color1);
+    background-color: var(--main-bg-transparent);
     padding: 0;
     transition: justify-content 2s;
 }
@@ -150,7 +152,7 @@ button.lightOn {
 
 .lightButton div {
     width: 2rem;
-    background-color: var(--button-bg-color2);
+    background-color: var(--button-bg-color1);
     border-radius: 2rem;
     padding-top: 4px;
     padding-bottom: 4px;

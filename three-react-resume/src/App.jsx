@@ -194,14 +194,15 @@ class App extends Component{
         rootStyle.setProperty('--main-bg-color', 'rgb(255, 255, 255)');
         rootStyle.setProperty('--main-bg-transparent', 'rgba(255, 255, 255, 0.7)');
         rootStyle.setProperty('--main-text-color', 'rgb(0, 0, 0)');
+        rootStyle.setProperty('--text-color-2', 'rgb(255, 255, 255)');
         rootStyle.setProperty('--button-bg-color1', '#8a2be2');
         rootStyle.setProperty('--button-bg-color2', 'rgb(35, 11, 57)');
-
       }
       else {
         rootStyle.setProperty('--main-bg-color', 'rgb(41, 41, 41)');
         rootStyle.setProperty('--main-bg-transparent', 'rgba(41, 41, 41, 0.7)');
         rootStyle.setProperty('--main-text-color', 'rgb(255, 255, 255)');
+        rootStyle.setProperty('--text-color-2', 'rgb(0, 0, 0)');
         rootStyle.setProperty('--button-bg-color1', 'rgb(35, 11, 57)');
         rootStyle.setProperty('--button-bg-color2', '#8a2be2');
       }

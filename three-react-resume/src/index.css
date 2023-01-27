@@ -16,6 +16,7 @@
   --main-bg-color: rgb(41, 41, 41);
   --main-bg-transparent: rgba(41, 41, 41, 0.7);
   --main-text-color: rgb(255, 255, 255);
+  --text-color-2: rgb(0,0,0);
   --button-bg-color1: rgb(35, 11, 57);
   --button-bg-color2: #8a2be2;
 }
