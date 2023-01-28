@@ -4,7 +4,7 @@ import { Reflector } from './Reflector.js';
 
 import { Stars } from './stars.js';
 
-//this is a 3D background developed with three.js and react. usingthe hook re
+//this is a 3D background developed with three.js and react. using the hook useEffect
 function Background3D(props) {
 
 
