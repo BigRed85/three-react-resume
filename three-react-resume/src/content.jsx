@@ -166,7 +166,7 @@ class MyProjects extends Component {
                     <li>An <a href="http://dustinguest.com/resume" target="_blank" rel="noopener noreferrer">interactive 3D web applicaiton</a> that was my first atempt to create an interactive resume, this did not use react</li>
                     <li>A <a href="http://dustinguest.com" target="_blank" rel="noopener noreferrer">web blog</a> where I can express My opinions and chronicle my projects.</li>
                     <li>A <a href="http://dustinguest.com/lights-solver/lightsOutSolver.html" target="_blank" rel="noopener noreferrer">lights out solver</a>. This is a tool that could be used to solve a lights out puzzle</li>
-                    <li>A <a href="" target="_blank" rel="noopener noreferrer">calculator web application</a> that I made to become familure with reactJS. This is an attempt to recreate the windows 10 caluculator. 
+                    <li>A <a href="https://bigred85.github.io/Calculator-dist/" target="_blank" rel="noopener noreferrer">calculator web application</a> that I made to become familure with reactJS. This is an attempt to recreate the windows 10 caluculator. 
                     The sorce code can be found <a href="https://github.com/BigRed85/calculator" target="_blank" rel="noopener noreferrer">here</a></li>
                 </ul>
 
