@@ -1,9 +1,6 @@
 import { Component } from 'react';
 
 class AboutMe extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -98,9 +95,6 @@ class AboutMe extends Component {
 }
 
 class MyProjects extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return(
@@ -189,9 +183,6 @@ class MyProjects extends Component {
 
 
 class ExperianceAndTech extends Component {
-    constructor(preps) {
-        super(preps);
-    }
 
     render() {
         return(
